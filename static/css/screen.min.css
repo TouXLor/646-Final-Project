@@ -253,7 +253,7 @@ a:hover {
   cursor: default;
 }
 .page-header__nav-link_selected:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .promo {
   width: 100%;
@@ -279,6 +279,22 @@ a:hover {
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 2s ease forwards;
+  transform: scale(0);
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .promo__slogan {
   margin-top: 15px;
@@ -318,6 +334,7 @@ a:hover {
   transform: scale(1.1);
   text-decoration: none;
 }
+
 .services {
   width: 100%;
 }
@@ -552,46 +569,52 @@ a:hover {
   border-top: 1px solid #939393;
   border-bottom: 1px solid #939393;
   padding: 45px 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
 .widgets:after {
   content: "";
   display: table;
   clear: both;
 }
+
 .widget {
-  float: left;
+  /* No float here, handled by Flexbox */
 }
-.widget_social {
-  text-align: left;
-  float: left;
+
+.widget_social,
+.widget_feed,
+.widget_contact {
+  text-align: center;
   width: 26.571428571428573%;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin: 0 1%;
 }
+
+/* If you want the feed widget wider than others */
 .widget_feed {
-  text-align: left;
-  float: left;
   width: 40.85714285714286%;
-  margin-left: 1%;
-  margin-right: 1%;
 }
+
 .widget_feed input[type="text"] {
   height: 40px;
   background-color: #494949;
   color: #606060;
 }
+
 .widget_feed input[type="submit"] {
   height: 40px;
   background-color: #3b5997;
   color: #fff;
 }
+
 .widget_contact {
   text-align: right;
-  float: left;
-  width: 26.571428571428573%;
-  margin-left: 1%;
-  margin-right: 1%;
 }
+
 .widget__icon {
   display: inline-block;
   width: 40px;
@@ -606,29 +629,42 @@ a:hover {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .widget__icon:hover {
   opacity: 0.6;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+
 .widget__icon_fb {
   background-position: 0 0;
 }
+
 .widget__icon_tw {
   background-position: -41px 0;
 }
+
 .widget__icon_gplus {
   background-position: -82px 0;
 }
+.widget__icon_ig {
+  background-position: -82px 0;
+}
+.widget__icon_tt {
+  background-position: -123px 0;
+}
+
 .widget__title {
   color: #c6c6c6;
   margin: 0 0 15px 0;
 }
+
 .widget__text {
   color: #606060;
   line-height: 16px;
 }
+
 .copyright {
   text-align: center;
   font-size: 15px;
