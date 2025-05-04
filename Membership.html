@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home | Lambda Phi Epsilon</title>
     <meta name="description" content="Page-specific description" />
     <meta name="keywords" content="Page-specific keywords" />
@@ -40,13 +40,118 @@
             class="page-header__nav-link page-header__nav-link_selected"
             href="home.html"
             >Home</a
-          ><a class="page-header__nav-link" href="AboutUs.html">About Us</a
-          ><a class="page-header__nav-link" href="Membership.html">Membership</a
-          ><a class="page-header__nav-link" href="Events.html">Events</a
-          ><a class="page-header__nav-link" href="Gallery.html">Gallery</a
-          ><a class="page-header__nav-link" href="contactUs.html">Contact Us</a>
+          >
+          <a class="page-header__nav-link" href="AboutUs.html">About Us</a>
+          <a class="page-header__nav-link" href="Membership.html">Membership</a>
+          <a class="page-header__nav-link" href="Events.html">Events</a>
+          <a class="page-header__nav-link" href="Gallery.html">Gallery</a>
+          <a class="page-header__nav-link" href="contactUs.html">Contact Us</a>
         </nav>
       </div>
     </header>
+    <section class="active-house">
+      <h2>Active House</h2>
+      <p>
+        Welcome to the Active House section. Here you can find information about
+        our current members and their roles within the organization.
+      </p>
+      <ul>
+        <li>John Doe - President</li>
+        <li>Jane Smith - Vice President</li>
+        <li>Michael Brown - Treasurer</li>
+        <li>Emily Davis - Secretary</li>
+      </ul>
+    </section>
+
+    <section class="classes">
+      <h2>Classes</h2>
+      <p>
+        Explore the different classes of members who have contributed to our
+        organization over the years.
+      </p>
+      <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('alpha')">
+          Alpha Class
+        </button>
+        <div class="dropdown-content" id="alpha">
+          <p>Founded in 2000</p>
+          <ul>
+            <li>Member 1</li>
+            <li>Member 2</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Repeat for other classes -->
+      <style>
+        .dropdown {
+          margin-bottom: 15px;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          max-width: 400px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .dropdown-button {
+          background: linear-gradient(90deg, #6a11cb, #2575fc);
+          color: white;
+          padding: 12px 15px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          text-align: left;
+          font-size: 16px;
+          font-weight: bold;
+          border-radius: 5px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+        }
+        .dropdown-button:hover {
+          background: linear-gradient(90deg, #2575fc, #6a11cb);
+          transform: scale(1.02);
+          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .dropdown-content {
+          display: none;
+          background-color: #f9f9f9;
+          padding: 15px;
+          border: 1px solid #ddd;
+          border-top: none;
+          border-radius: 0 0 5px 5px;
+          animation: fadeIn 0.3s ease-in-out;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .dropdown-content ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        .dropdown-content ul li {
+          padding: 5px 0;
+          font-size: 14px;
+          color: #333;
+        }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      </style>
+      <script>
+        function toggleDropdown(id) {
+          const content = document.getElementById(id);
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        }
+      </script>
+    </section>
   </body>
 </html>
