@@ -3,155 +3,188 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home | Lambda Phi Epsilon</title>
-    <meta name="description" content="Page-specific description" />
-    <meta name="keywords" content="Page-specific keywords" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link
-      rel="shortcut icon"
-      href="static/images/favicons/favicon.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="static/images/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="static/images/favicons/apple-touch-icon-precomposed.png"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="static/css/screen.min.css" />
-    <link rel="stylesheet" href="static/css/custom.min.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Membership | Lambda Phi Epsilon</title>
+    <link rel="stylesheet" href="static/css/home.css" />
+    <link rel="stylesheet" href="static/css/navBar.css" />
+    <link rel="stylesheet" href="static/css/membership.css" />
   </head>
   <body>
+    <!-- NAVIGATION BAR -->
     <header class="page-header">
       <div class="page-header__inner">
         <h1 class="logo page-header__logo">
           My Charity<span>Making more todays</span>
         </h1>
         <nav class="nav page-header__nav">
-          <a
-            class="page-header__nav-link page-header__nav-link_selected"
-            href="home.html"
-            >Home</a
-          >
+          <a class="page-header__nav-link" href="home.html">Home</a>
           <a class="page-header__nav-link" href="AboutUs.html">About Us</a>
           <a class="page-header__nav-link" href="Membership.html">Membership</a>
-          <a class="page-header__nav-link" href="Events.html">Events</a>
           <a class="page-header__nav-link" href="Gallery.html">Gallery</a>
-          <a class="page-header__nav-link" href="contactUs.html">Contact Us</a>
         </nav>
       </div>
     </header>
-    <section class="active-house">
-      <h2>Active House</h2>
-      <p>
-        Welcome to the Active House section. Here you can find information about
-        our current members and their roles within the organization.
-      </p>
-      <ul>
-        <li>John Doe - President</li>
-        <li>Jane Smith - Vice President</li>
-        <li>Michael Brown - Treasurer</li>
-        <li>Emily Davis - Secretary</li>
-      </ul>
-    </section>
 
-    <section class="classes">
-      <h2>Classes</h2>
-      <p>
-        Explore the different classes of members who have contributed to our
-        organization over the years.
-      </p>
-      <div class="dropdown">
-        <button class="dropdown-button" onclick="toggleDropdown('alpha')">
-          Alpha Class
-        </button>
-        <div class="dropdown-content" id="alpha">
-          <p>Founded in 2000</p>
-          <ul>
-            <li>Member 1</li>
-            <li>Member 2</li>
-          </ul>
-        </div>
-      </div>
-      <!-- Repeat for other classes -->
-      <style>
-        .dropdown {
-          margin-bottom: 15px;
-          border-radius: 8px;
-          overflow: hidden;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          max-width: 400px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .dropdown-button {
-          background: linear-gradient(90deg, #6a11cb, #2575fc);
-          color: white;
-          padding: 12px 15px;
-          border: none;
-          cursor: pointer;
-          width: 100%;
-          text-align: left;
-          font-size: 16px;
-          font-weight: bold;
-          border-radius: 5px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          transition: all 0.3s ease;
-        }
-        .dropdown-button:hover {
-          background: linear-gradient(90deg, #2575fc, #6a11cb);
-          transform: scale(1.02);
-          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-        .dropdown-content {
-          display: none;
-          background-color: #f9f9f9;
-          padding: 15px;
-          border: 1px solid #ddd;
-          border-top: none;
-          border-radius: 0 0 5px 5px;
-          animation: fadeIn 0.3s ease-in-out;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .dropdown-content ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-        }
-        .dropdown-content ul li {
-          padding: 5px 0;
-          font-size: 14px;
-          color: #333;
-        }
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      </style>
-      <script>
-        function toggleDropdown(id) {
-          const content = document.getElementById(id);
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        }
-      </script>
+    <!-- MEMBERSHIP SECTION -->
+    <section class="membership-page">
+      <h2>Active House</h2>
+
+      <!-- Greek Line Dropdowns -->
+      <details>
+        <summary>CHOSEN CHARTER CLASS</summary>
+        <ul>
+          <li>#1 Nawal “Garuda” Dua</li>
+          <li>#2 Neehar “Flashbang” Namjoshi</li>
+          <li>#3 Ly “VISIØN” Hoang</li>
+          <li>#4 Brian “Astro” Leung</li>
+          <li>#5 Nawang “Resonance” Singhe</li>
+          <li>#6 Daniel “Kickstart” King</li>
+          <li>#7 Travis “Savier” Dao</li>
+          <li>#8 David “Arity” Ho</li>
+          <li>#9 Justyn “endø” Nguyen</li>
+          <li>#10 Dustin “KAKASHI” Nguyen</li>
+          <li>#11 Kevin “Recker” Nguyen</li>
+          <li>#12 Thang “Tiburón” Nguyen</li>
+          <li>#14 Timothy “Smooches” Tran</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>ASCENDED ALPHA CLASS</summary>
+        <ul>
+          <li>#15 Sirtaj “cøntrola” Grewal</li>
+          <li>#16 Nicholas “XØDUS” Tan</li>
+          <li>#18 Rayan “Cadenza” Banerjee</li>
+          <li>#19 Jordan “K.E.N.A.” Nunez</li>
+          <li>#20 See “WRΛTH” Xiong</li>
+          <li>#21 Austin “Zuko” Ly</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>BOUNDLESS BETA CLASS</summary>
+        <ul>
+          <li>#22 Ben “Kirø” Mohlke</li>
+          <li>#23 Charlie “subtxt” Moua</li>
+          <li>#24 Thutop “Arion” Wangchuk</li>
+          <li>#25 Timothy Brian “Rurouni” Nuryadi</li>
+          <li>#27 Tenzin “V.V.S.” Tashi</li>
+          <li>#28 Yeng “Nico” Yang</li>
+          <li>#29 Lerseng “H.A.L.O.” Xiong</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>GALACTIC GAMMA CLASS</summary>
+        <ul>
+          <li>#30 Jason “Silhouette” Bai</li>
+          <li>#31 Pacqo “Kitsune” Geluk</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>DAUNTLESS DELTA CLASS</summary>
+        <ul>
+          <li>#32 Tenzin “DEAD$HOT” Samdup</li>
+          <li>#33 Tenzin “hydrøs” Nyingpo</li>
+          <li>#34 Alex “Otacon” Do</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>ELEGANZA EXTRAVAGANZA EPSILON CLASS</summary>
+        <ul>
+          <li>#35 Cimfeng “Argonaut” Lee</li>
+          <li>#36 Filbert “Apollo” Wiranata</li>
+          <li>#37 Ethan “Deku” Pham</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>ZENITH ZETA CLASS</summary>
+        <ul>
+          <li>#38 Jerry “VENØM” Yu</li>
+          <li>#39 Dennis “JUGGERNAUT” Nguyen</li>
+          <li>#40 Colin “jøndo” Yang</li>
+          <li>#41 Brandon “Jokr” Simpraphone</li>
+          <li>#42 Zarni “Reliq” Htet</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>ECLECTIC ETA CLASS</summary>
+        <ul>
+          <li>#43 Leonardo “Q.A.A” Ruiz</li>
+          <li>#45 Ulysses “Zeus” Vang</li>
+          <li>#47 William “Gohan” Ly</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>TIMELESS THETA CLASS</summary>
+        <ul>
+          <li>#49 Andy “DIABLO” Wang</li>
+          <li>#50 Eric “BLΛDE” Nguyen</li>
+          <li>#51 Andy “Karna” Vue</li>
+          <li>#52 Kha “ITΛCHI” Tran</li>
+          <li>#53 Aaron “CΛRNAGE” Le</li>
+          <li>#54 James “FΛKER” Chang</li>
+          <li>#55 Chuefeng “anømaly” Moua</li>
+          <li>#56 Kyle “Aros” Yang</li>
+          <li>#57 Tou Xiong “Arcas” Lor</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>INCANDESCENT IOTA CLASS</summary>
+        <ul>
+          <li>#58 Aaron “dracø” Hou</li>
+          <li>#59 Joseph “Zorø” Chau</li>
+          <li>#60 Dylan “ARCΛNE” Nguyen</li>
+          <li>#61 Marvin “ARNØVA” Yang</li>
+          <li>#62 Bee “Vølt” Chang</li>
+          <li>#63 Khang “ICHIGØ” Tran</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>KING KAPPA CLASS</summary>
+        <ul>
+          <li>#64 Richard “ΛRCHIMĘDES” Huynh</li>
+          <li>#65 Joshua “Λrelion” Saguiped</li>
+          <li>#66 Edison “TŌJI” Chiu</li>
+          <li>#67 Danny “S.O.L.” Nguyen</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>MALEVOLENT MU CLASS</summary>
+        <ul>
+          <li>#68 Andrew “Kazø” Uong</li>
+          <li>#69 Tim “hørizon” Yang</li>
+          <li>#71 Johnny “Atlas” Lee</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>NAKAMA NU CLASS</summary>
+        <ul>
+          <li>#72 Alvin “ÅRA'KAΓI” Lee</li>
+          <li>#73 Owen “ARCHANGΞL” Hom</li>
+          <li>#74 Joshua “MIRAGE” Vang</li>
+          <li>#75 Ethan “ISØ” Yang</li>
+          <li>#76 Tong “Kenøryu” Vue</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>XEN XI</summary>
+        <ul>
+          <li>#77 Frederick "UZZI" Deng</li>
+          <li>#78 Patrick "Søra" Jiang</li>
+          <li>#79 John "ONI" Yang</li>
+        </ul>
+      </details>
     </section>
   </body>
 </html>
