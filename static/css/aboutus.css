@@ -208,17 +208,7 @@ a:hover {
   background-color: #0033cc;
   color: #ffffff;
 }
-.page-header__nav-link.active {
-  background-color: #0033cc;
-  color: #ffffff;
-  font-weight: bold;
-  border-radius: 4px;
-}
-.page-header__nav-link.active:hover {
-  background-color: #0033cc;
-  color: #ffffff;
-  text-decoration: none;
-}
+
 /* === ABOUT US PAGE STYLES === */
 .about-us-page {
   background-color: #fafafa;
