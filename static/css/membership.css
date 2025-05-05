@@ -34,3 +34,153 @@ li {
   padding: 0.25rem 0;
   list-style: disc;
 }
+
+button {
+  padding: 10px 20px;
+  background-color: #0033cc;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+button:hover {
+  background-color: #002699;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+button:focus,
+button:active {
+  outline: none;
+  background-color: #001f73;
+  box-shadow: 0 0 0 3px rgba(0, 51, 204, 0.3);
+}
+button {
+  position: relative;
+  overflow: hidden;
+}
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-20deg);
+}
+button:hover::after {
+  left: 150%;
+  transition: 0.75s;
+}
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .membership-page {
+    padding: 1rem;
+  }
+  .membership-page h2 {
+    font-size: 1.5rem;
+  }
+  details {
+    padding: 0.5rem;
+  }
+  summary {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 480px) {
+  .membership-page h2 {
+    font-size: 1.2rem;
+  }
+  details {
+    padding: 0.25rem;
+  }
+  summary {
+    font-size: 1rem;
+  }
+}
+
+details {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+summary {
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  color: #0033cc;
+}
+details[open] > ul {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+details ul {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+details li {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+summary:hover {
+  background-color: #eef2ff;
+  color: #001a99;
+}
+
+summary:focus {
+  outline: 2px dashed #0033cc;
+}
+
+#search {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Roboto Slab', serif;
+  transition: all 0.3s ease;
+}
+#search:focus {
+  border-color: #0033cc;
+  box-shadow: 0 0 5px rgba(0, 51, 204, 0.5);
+  outline: none;
+}
+#search::placeholder {
+  color: #767676;
+  font-style: italic;
+}
+#search {
+  background-color: #f0f0f0;
+}

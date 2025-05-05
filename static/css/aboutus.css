@@ -208,7 +208,17 @@ a:hover {
   background-color: #0033cc;
   color: #ffffff;
 }
-
+.page-header__nav-link.active {
+  background-color: #0033cc;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.page-header__nav-link.active:hover {
+  background-color: #0033cc;
+  color: #ffffff;
+  text-decoration: none;
+}
 /* === ABOUT US PAGE STYLES === */
 .about-us-page {
   background-color: #fafafa;
@@ -264,4 +274,59 @@ a:hover {
 .about-us-page .charter-card span {
   color: #555;
   font-size: 0.9rem;
+}
+
+.about-us-page .charter-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us-page .charter-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+.about-us-page .charter-card::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: #0033cc;
+  margin-top: 1rem;
+  transition: width 0.3s;
+  width: 0%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-us-page .charter-card:hover::after {
+  width: 60%;
+}
+.about-us-page .charter-card:hover h4 {
+  color: #0033cc;
+}
+.about-us-page .charter-card:hover span {
+  color: #0033cc;
+}
+.about-us-page .charter-card img {
+  transition: transform 0.3s ease;
+}
+
+.about-us-page .charter-card:hover img {
+  transform: scale(1.03);
+}
+@media (max-width: 600px) {
+  .about-us-page .charter-card {
+    padding: 0.75rem;
+  }
+
+  .about-us-page .charter-card h4 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .about-us-page .charter-card h4 {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 300px) {
+  .about-us-page .charter-card h4 {
+    font-size: 0.8rem;
+  }
 }
