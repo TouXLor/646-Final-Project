@@ -224,3 +224,11 @@ summary:focus {
   color: #888;
   font-size: 0.95rem;
 }
+footer {
+  margin-top: 3rem;
+  background-color: #002855;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}

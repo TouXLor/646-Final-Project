@@ -70,3 +70,15 @@
     gap: 0.25rem;
   }
 }
+footer {
+  margin-top: 3rem;
+  background-color: #002855;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
