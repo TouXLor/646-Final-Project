@@ -28,6 +28,23 @@
     <!-- MEMBERSHIP SECTION -->
     <section class="membership-page">
       <h2>Active House</h2>
+      <h2>All Brothers</h2>
+
+      <input
+        type="text"
+        id="search"
+        placeholder="Search for a brother..."
+        style="
+          width: 100%;
+          padding: 0.75rem;
+          margin-bottom: 1.5rem;
+          font-size: 1rem;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+        "
+      />
+      <button id="expandAll">Expand All</button>
+      <button id="collapseAll">Collapse All</button>
 
       <!-- Greek Line Dropdowns -->
       <details>
@@ -186,5 +203,6 @@
         </ul>
       </details>
     </section>
+    <script src="./javascripts/membership.js"></script>
   </body>
 </html>
