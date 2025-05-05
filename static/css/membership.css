@@ -169,7 +169,7 @@ summary:focus {
   font-size: 1rem;
   border-radius: 6px;
   border: 1px solid #ccc;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   transition: all 0.3s ease;
 }
 #search:focus {
@@ -183,4 +183,44 @@ summary:focus {
 }
 #search {
   background-color: #f0f0f0;
+}
+/* Container Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+/* Individual Card Styling */
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #002855;
+}
+
+.card p {
+  margin: 0;
+  font-weight: bold;
+  color: #444;
+}
+
+.card span {
+  font-style: italic;
+  color: #888;
+  font-size: 0.95rem;
 }
